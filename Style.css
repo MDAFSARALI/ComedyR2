@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "gilroy";
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#__top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: static;
+    background-color: black;
+}
+#__top > h1{
+    font-size: 10vw;
+    font-weight: 400;
+    font-family: "kajiro";
+    text-align: center;
+    -webkit-text-stroke: 1.5px #fff;
+    color: transparent;
+}
+#__top > h1 span{
+    color: red;
+    font-size: 10vw;
+    font-family: "kajiro";
+    -webkit-text-stroke: 1.5px #fff;
+}
+#__top > h1::selection{
+    color: rgb(200, 45, 45);
+    background-color: black;
+}
+#__top > h1 span::selection{
+    color: black;
+    background-color: red;
+}
+#__top img{
+    height:8vw;
+    rotate: 45deg;
+    animation: animate 2s both ;
+    margin-right: 5%;
+    cursor: none;
+    /* background-color: white; */
+    outline: none;
+    border-radius: 20px;
+}
+#__top i{
+    margin-top: 20px;
+    font-size: 5vw;
+    margin-left: 7%;
+    rotate: 45deg;  
+    -webkit-text-stroke: 1.5px #fff;
+
+
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    /* padding-top: 3vh; */
+}
+#back{
+    width: 100%;
+    height: 100vh; 
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 3vh;
+    z-index: 5;
+}
+#top{
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    /* padding:0 3vw; */
+    margin-top: 15vh;
+
+}
+#workingArea{
+    position: relative;
+    max-width: 80%;
+    height: 100vh;
+    max-width: 1600px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+#hero{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);
+    width: 100%;
+    margin-top: 3vw;
+    padding:0 3vw;
+}
+#heroleft{
+    margin-top: 8vh;
+    min-width: 50%;
+}
+#heroleft .elem{
+    height: 9vw;
+    overflow: hidden;
+    position: relative;
+
+}
+#heroleft .elem h1 > i{
+    font-size: 5vw;
+}
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+#heroleft .elem h1{
+    position:absolute;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw;
+    line-height: .9;
+    top: 100%;
+    left: 0; 
+}
+#heroleft button{
+    padding: 0.8vw 3vw;
+    font-size: 3vw;
+    font-family: "kajiro";
+    margin-top: 2vw;
+    pointer-events: all;
+}
+#heroright{
+    width: 18%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#heroright p{
+    max-width: 200px;
+}
+#heroright p i{
+    text-align: right;
+    font-size: 14px;
+    color: rgb(255, 183, 0);
+    -webkit-text-stroke: 1px #ffe53f;
+}
+
+#heroright #imagediv{
+    width: 110%;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url('./assets/WATCH.png');
+    background-size: cover;
+    background-position:center;
+    border-radius: 10px;
+    cursor: pointer;
+    /* padding: 0 50px; */
+}
+#heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
